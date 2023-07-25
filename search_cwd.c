@@ -42,5 +42,6 @@ char *search_cwd(char *filename, char *er)
 		}
 	}
 	closedir(dir);
+	free(ret);
 	return (er);
 }
